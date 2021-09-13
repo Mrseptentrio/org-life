@@ -1,0 +1,5 @@
+* Inbox
+** [2021-09-12 Sun]
+    woking on it as quick as posible
+
+[[file:~/Documents/code-projects/theodinproject/index.html][file:~/Documents/code-projects/theodinproject/index.html]]

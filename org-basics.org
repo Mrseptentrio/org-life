@@ -1,0 +1,14 @@
+#+TITLE: Org Mode Basics in Doom Emacs
+#+DESCRIPTION: AN Org document to demonstrate org mode
+#+AUTHOR: Arslane Hadjoudj
+
+* A new Headline
+** Level 2
+*** Level 3
+**** Level 4
+***** Level 5
+****** Level 6
+* Getting started in Org Mode
+    Read Org mode manual with M-x org-info
+** org-toggle-heading : Spc-m-h
+** org-toggle-item : spc-m-i

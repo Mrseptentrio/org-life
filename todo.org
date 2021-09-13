@@ -1,0 +1,8 @@
+* Inbox
+** [ ] reviewing some of[[https://freecodecamp.com][ freecodecamp's ]] html and css small courses
+
+[[file:~/Documents/code-projects/theodinproject/index.html::</head>]]
+** [ ] finish the firstpart of the html section of th odin project
+
+[[file:/home/eocene/Documents/code-projects/theodinproject/][file:/home/eocene/Documents/code-projects/theodinproject/]]
+** [x] start the javascript course right after
