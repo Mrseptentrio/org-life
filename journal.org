@@ -2,16 +2,16 @@
 
 * 2021
 
-** 2021-09 September
+** 2021-10 octobre
 
-*** 2021-09-12 Sunday
-**** [2021-09-12 Sun 14:58]
-Today, my splendid wife and me, went to her parent house with syrian food, we then came back home, had a little fun, i then started setting up an Ubuntu VM to develop, i installed doom emacs, and started playing around with org mode, especially the captur and the journal functionality,let it be the first of many.
+*** 2021-10-25 lundi
+**** [2021-10-25 lun. 00:57] The rust journey started:
+Today, i decided that i was going to learn rust, already finished the guessing_game even though i need to read it again to understand correctly the logic of it, hope i'll go through the book and start to understand programming concepts in the near futur
 
-[[file:~/org/notes.org::*\[2021-09-12 Sun\]][[2021-09-12 Sun]​]]
+[[file:~/Documents/rust_workspace/guessing_game/src/main.rs::use colored::*;]]
 
-*** 2021-09-13 Monday
-**** [2021-09-13 Mon 20:13]
-Today was actually a productive day, my significant other and I went to my school to take back my corrected master's degree, then off to her parents house for some greetings,
-then, to a traductor, our diplomas needs to be in english in order to send them to the WES organisation and have the equivalent internationally recognized;
-Other than that, I am still advancing on the Odin Project, learning emacs through doom emacs and trying to get of grasp of org and the todo's and journaling functonality on it.
+*** 2021-10-27 mercredi
+**** [2021-10-27 mer. 02:36] Golang Journey:
+Today, i started to write an org note that will be my guideline throug my golang journey following jay mcgraven's golang book, feeling confident, hope i'll finish it and finally start writing something usefull with my futur golang skills.
+
+[[file:~/org/golang.org::*Declaring variables][Declaring variables]]

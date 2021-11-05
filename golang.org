@@ -1,0 +1,107 @@
+#+TITLE: Golang  Journey
+#+DESCRIPTION: Documenting my journey through the go programming language
+#+PROPERTY: header-args :tangle main.go
+* TABLE OF CONTENT :toc:
+- [[#chapter-1--lets-get-going-syntax-basics][Chapter 1 : let's get going: Syntax Basics]]
+  - [[#strings][Strings]]
+  - [[#numbers][Numbers]]
+  - [[#types][Types]]
+  - [[#declaring-variables][Declaring variables]]
+  - [[#naming-rules][Naming rules]]
+  - [[#conversions][Conversions]]
+- [[#chapter-2--which-code-runs-next-conditionals-and-loops][Chapter 2 : Which code runs next? Conditionals and Loops]]
+  - [[#calling-methods][Calling methods]]
+
+* Chapter 1 : let's get going: Syntax Basics
+
+** Strings
+    * Strings in go is a series of bytes representing text characters
+** Numbers
+    * Numbers depending on their types ( floating points or integer ) are treated differently in go
+** Types
+    * Values in go are all classified in differet *types*
+    * Go is statically Typed meaning that it knows what type the value is before the program runs
+*** Types descripton
+| Type    | Description                                              |
+|---------+----------------------------------------------------------|
+| int     | An integer, holds whole numbers                          |
+| float64 | Holds numbers with a fractional part                     |
+| bool    | Can only be *true* or *false*                            |
+| string  | A series of data that usually represents text characters |
+|         |                                                          |
+** TODO Declaring variables
+      * A variable is a piece of storage containing a value
+      * To declare a variable, you use the var keyword, followed by a name and a type for the variable, e.g:
+        #+begin_src go
+          var quantity int
+        #+end_src
+
+      * You can also assign multiple variables in the same statement, e.g:
+        #+begin_src go
+			length, width = 1.2, 2.4
+        #+end_src
+
+      * If you assign a value to a *var* when as you declare it, you can ommit the *var* keyword and the type e.g:
+       #+begin_src go
+			quantity := 4
+			name := "Arslane"
+        #+end_src
+
+      * If you declare a variable without assiging it a value, it's value will be the *zer value*, for numeric type, it'll be *0*
+
+      * exercise, breaking stuff is educational:
+
+       #+begin_src go
+		package main
+
+		import "fmt"
+
+		func main() {
+				quantity := 4
+				length, width := 1.2, 2.4
+				customerName := "Damon Cole"
+
+				fmt.Println(customerName)
+				fmt.Println("has ordered", quantity, "sheets")
+				fmt.Println("each with an area of")
+				fmt.Println(length*width, "square meters")
+			}
+       #+end_src
+
+
+
+** Naming rules
+    * A name must start with a letter
+    * If a variable starts with a capital letter, it is considered *exported* and so can be accessed from other packages
+    * Variable name with multiple words should be *camelCased* by convention, not obliged but preferable
+** Conversions
+    * math operations in go require that the values of the vars must be of the same type, if not, throws an error
+    * to change that you can do conversios, e.g:
+    #+BEGIN_SRC go
+        var myInt int = 2
+        fmt.Println(reflect.TypeOf(float64(myInt)))  // shows float64
+    #+END_SRC
+    *
+* Chapter 2 : Which code runs next? Conditionals and Loops
+
+** Calling methods
+    * methods in code are functions that are associated with values of a given type
+    * the time package have a Time type that represents a date.
+      e.g:
+      #+BEGIN_SRC go
+        package main
+
+        import (
+            "fmt"
+            "time"
+            )
+
+        func main() {
+            var now time.Time  time.Now()
+            var year int = now.Year()
+            fmt.Println(year)
+}
+
+      #+END_SRC
+
+    *
